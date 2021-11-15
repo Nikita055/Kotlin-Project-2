@@ -3,12 +3,15 @@ package com.example.kotlinwashxproject
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.fragment.app.Fragment
 import com.example.kotlinwashxproject.databinding.ActivityAddVehicleAddressBinding
+import com.example.kotlinwashxproject.fragment.AddVehicleFragment
+import com.example.kotlinwashxproject.utility.Utils.addFragmentToBackStack
+import com.example.kotlinwashxproject.utility.Utils.showColoredStatusBar
 
-class AddVehicleAddressActivity : AppCompatActivity() {
-
-     private var binding : ActivityAddVehicleAddressBinding?= null
-     private var isForm = ""
+class AddVehicleAddressActivity : AppCompatActivity() , View.OnClickListener{
+    private var binding : ActivityAddVehicleAddressBinding? = null
+    private var isForm = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,14 +22,23 @@ class AddVehicleAddressActivity : AppCompatActivity() {
     }
 
     private fun initUi() {
-     if (intent.hasExtra("isForm")){
-       isForm = intent.getStringExtra("isForm")!!
-     }
-        setSupportActionBar(binding!!.toolbar.toolbar)
-        supportActionBar!!.title = null
+          if (intent.hasExtra("isFrom")){
+              isForm = intent.getStringExtra("isFrom")!!
+          }
+        /*setSupportActionBar(binding!!.toolbar.toolbar)
+        supportActionBar!!.title = null*/
 
-      if (isForm == "SignUp"){
-          
-      }
+        if (isForm == "SignUp"){
+            val vehicleFragment : Fragment = AddVehicleFragment()
+            val bundle = Bundle()
+            bundle.putString("isForm",isForm)
+            vehicleFragment.arguments = bundle
+            addFragmentToBackStack(vehicleFragment,this,binding!!.container.id)
+        }
+
+    }
+
+    override fun onClick(p0: View?) {
+
     }
 }

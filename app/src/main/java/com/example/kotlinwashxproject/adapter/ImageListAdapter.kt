@@ -1,10 +1,11 @@
-package com.example.kotlinwashxproject
+package com.example.kotlinwashxproject.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.kotlinwashxproject.R
 import com.example.kotlinwashxproject.databinding.ImageSingleListItemBinding
 
 class ImageListAdapter (val imageList:MutableList<Int>, private val context: Context)  : RecyclerView.Adapter<ImageListAdapter.ImageHistoryViewHolder>() {

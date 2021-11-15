@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/drawable-xxxhdpi/rounded_bg.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/drawable/radio.xml" value="0.16770833333333332" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/drawable/rounded_bg.xml" value="0.22" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/activity_add_vehicle_address.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
@@ -11,7 +12,9 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/activity_splash.xml" value="0.2151268115942029" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/add_vehicle_address_toolobar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_vehicle_details.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/mage_single_list_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/text_list_item.xml" value="0.20625" />
       </map>
     </option>
   </component>

@@ -19,7 +19,7 @@ class SignUpActivity : AppCompatActivity() {
     private fun initUi() {
       bind.signUpBtn.setOnClickListener {
           val addDetails = Intent(this, AddVehicleAddressActivity::class.java)
-          addDetails.putExtra("isForm","SignUp")
+          addDetails.putExtra("isFrom","SignUp")
           startActivity(addDetails)
           finishAffinity()
       }
