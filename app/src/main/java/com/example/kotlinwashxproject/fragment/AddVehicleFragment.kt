@@ -15,7 +15,10 @@ import com.example.kotlinwashxproject.LoginActivity
 import com.example.kotlinwashxproject.R
 import com.example.kotlinwashxproject.constant.BaseFragment
 import com.example.kotlinwashxproject.databinding.FragmentVehicleDetailsBinding
-
+import com.example.kotlinwashxproject.utility.Utils.addFragmentToBackStack
+//https://idapgroup.com/blog/android-arguments-with-kotlin-delegates/
+//https://developer.android.com/guide/navigation/navigation-pass-data#kotlin
+//https://android--examples.blogspot.com/2019/07/android-kotlin-fragment-pass-arguments.html
 
 class AddVehicleFragment : BaseFragment(), View.OnClickListener {
     private var binding : FragmentVehicleDetailsBinding? = null
@@ -78,12 +81,41 @@ class AddVehicleFragment : BaseFragment(), View.OnClickListener {
                requireActivity().finish()
            }
            val title = toolbar.findViewById<TextView>(R.id.title)
-
+           title.text = resources.getString(R.string.add_vehicle_detail)
+           val skip = toolbar.findViewById<TextView>(R.id.skip)
+           skip.setOnClickListener(this)
+       }else{
+           val toolbar: androidx.appcompat.widget.Toolbar =
+               requireActivity().findViewById(R.id.toolbar)
+           val menuIcon = toolbar.findViewById<ImageView>(R.id.menu_icon)
+           menuIcon.visibility = View.GONE
+           val logo = toolbar.findViewById<ImageView>(R.id.home_logo)
+           logo.visibility = View.GONE
+           val back = toolbar.findViewById<ImageView>(R.id.back)
+           back.visibility = View.VISIBLE
+           val title = toolbar.findViewById<TextView>(R.id.title)
+           title.visibility = View.VISIBLE
+           title.text = resources.getString(R.string.add_vehicle_detail)
+           back.setOnClickListener {
+              // navigateUp()
+           }
        }
     }
 
-    override fun onClick(p0: View?) {
-        TODO("Not yet implemented")
+    override fun onClick(v: View?) {
+        when(v!!.id){
+            R.id.skip,
+            R.id.done_btn -> {
+                if (isFrom == "SignUp"){
+                  val bundle = Bundle()
+                   val targetFragment = AddAddressFragment()
+                    bundle.putString("isFrom","SignUp")
+                    targetFragment.arguments = bundle
+                    addFragmentToBackStack(targetFragment, requireActivity(),R.id.container)
+                }
+
+            }
+        }
     }
 
 

@@ -23,4 +23,9 @@ object Utils {
              ft.commit()
          }
     }
+
+
+   /* fun navigateUp(){
+        findNavController().navigateUp()
+    }*/
 }

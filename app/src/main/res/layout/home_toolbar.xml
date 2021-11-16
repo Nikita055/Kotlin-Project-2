@@ -1,0 +1,54 @@
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_rl">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/menu_1"
+            android:id="@+id/menu_icon"
+            android:contentDescription="" />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:src="@drawable/arrow___left"
+            android:id="@+id/back"
+            />
+
+        <ImageView
+            android:id="@+id/home_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/splash_logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Title"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/dark_blue_sec"
+            android:textSize="17sp"
+            android:visibility="gone"
+            android:id="@+id/title"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:visibility="gone"
+            android:src="@drawable/chat_border"
+            />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

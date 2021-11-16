@@ -11,7 +11,7 @@ import com.example.kotlinwashxproject.utility.Utils.showColoredStatusBar
 
 class AddVehicleAddressActivity : AppCompatActivity() , View.OnClickListener{
     private var binding : ActivityAddVehicleAddressBinding? = null
-    private var isForm = ""
+    private var isFrom = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,15 +23,15 @@ class AddVehicleAddressActivity : AppCompatActivity() , View.OnClickListener{
 
     private fun initUi() {
           if (intent.hasExtra("isFrom")){
-              isForm = intent.getStringExtra("isFrom")!!
+              isFrom = intent.getStringExtra("isFrom")!!
           }
         /*setSupportActionBar(binding!!.toolbar.toolbar)
         supportActionBar!!.title = null*/
 
-        if (isForm == "SignUp"){
+        if (isFrom == "SignUp"){
             val vehicleFragment : Fragment = AddVehicleFragment()
             val bundle = Bundle()
-            bundle.putString("isForm",isForm)
+            bundle.putString("isFrom",isFrom)
             vehicleFragment.arguments = bundle
             addFragmentToBackStack(vehicleFragment,this,binding!!.container.id)
         }
