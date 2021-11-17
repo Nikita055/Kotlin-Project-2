@@ -1,6 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/nav">
+
+   <!-- <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.kotlinwashxproject.fragment.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.kotlinwashxproject.fragment.HistoryFragment"
+        android:label="HistoryFragment" />-->
+
+    <fragment
+        android:id="@+id/home"
+        tools:layout="@layout/fragment_home"
+        android:name="com.example.kotlinwashxproject.fragment.HomeFragment">
+
+        <action
+            android:id="@+id/history"
+            app:destination="@id/history" />
+        <action
+            android:id="@+id/action_home_to_profileFragment"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_home_to_FAQFragments"
+            app:destination="@id/f_n_q" />
+        <action
+            android:id="@+id/action_home_to_settingsFragment"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_home_to_scheduleAppointmentFragment"
+            app:destination="@id/scheduleFragment" />
+        <action
+            android:id="@+id/action_home_to_upcomingAppointmentDetailFragment"
+            app:destination="@id/upcomingAppointmentDetailFragment" />
+        <action
+            android:id="@+id/action_home_to_historyDetailsFragment"
+            app:destination="@id/historyDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/history"
+        android:name="com.example.kotlinwashxproject.fragment.HistoryFragment"
+        tools:layout="@layout/fragment_history_listing" >
+        <action
+            android:id="@+id/action_history_to_historyDetailsFragment"
+            app:destination="@id/historyDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.go.washx.view.fragment.ProfileFragment"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+        <action
+            android:id="@+id/action_profile_to_addVehicleFragment"
+            app:destination="@id/addVehicleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/f_n_q"
+        android:name="com.go.washx.view.fragment.FAQFragments"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.go.washx.view.fragment.SettingsFragment"
+        tools:layout="@layout/fragment_settings"
+        android:label="Settings">
+        <action
+            android:id="@+id/action_settings_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+        <action
+            android:id="@+id/action_settings_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.go.washx.view.fragment.ScheduleFragment"
+        android:label="ScheduleAppointmentFragment"
+        tools:layout="@layout/fragment_schedule">
+        <action
+            android:id="@+id/reScheduleFragment"
+            app:destination="@id/scheduleFragment"/>
+        <action
+            android:id="@+id/action_scheduleFragment_to_scheduleAppointmentFragment"
+            app:destination="@id/scheduleAppointmentFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment_to_addVehicleFragment"
+            app:destination="@id/addVehicleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingAppointmentDetailFragment"
+        android:name="com.go.washx.view.fragment.UpcomingAppointmentDetailFragment"
+        android:label="UpcomingAppointmentDetailFragment"
+        tools:layout="@layout/fragment_upcoming_appointment_detail">
+        <action
+            android:id="@+id/action_upcomingAppointmentDetailFragment_to_home"
+            app:popUpTo="@id/home"
+            app:popUpToInclusive="true"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.go.washx.view.fragment.ContactUsFragment"
+        android:label="ContactUsFragment"
+        tools:layout="@layout/fragment_contact_us"/>
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.go.washx.view.fragment.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment"
+        tools:layout="@layout/fragment_privacy_policy"/>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.go.washx.view.fragment.SummaryFragment"
+        android:label="SummaryFragment"
+        tools:layout="@layout/fragment_summary">
+        <action
+            android:id="@+id/action_summaryFragment_to_home"
+            app:destination="@id/home"
+            app:popUpTo="@id/home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleAppointmentFragment"
+        android:name="com.go.washx.view.fragment.ScheduleAppointmentFragment"
+        android:label="ScheduleAppointmentFragment"
+        tools:layout="@layout/fragment_schedule_appointment">
+        <action
+            android:id="@+id/action_scheduleAppointmentFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+        <action
+            android:id="@+id/action_scheduleAppointmentFragment_to_addAddressFragment"
+            app:destination="@id/addAddressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyDetailsFragment"
+        android:name="com.go.washx.view.fragment.HistoryDetailsFragment"
+        android:label="HistoryDetailsFragment"
+        tools:layout="@layout/fragment_history_detail">
+        <action
+            android:id="@+id/action_historyDetailsFragment_to_imageHistoryFragment"
+            app:destination="@id/imageHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageHistoryFragment"
+        android:name="com.go.washx.view.fragment.ImageHistoryFragment"
+        android:label="ImageHistoryFragment"
+        tools:layout="@layout/fragment_view_image_history"/>
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.go.washx.view.fragment.AddAddressFragment"
+        android:label="AddAddressFragment"
+        tools:layout="@layout/fragment_address"/>
+    <fragment
+        android:id="@+id/addVehicleFragment"
+        android:name="com.go.washx.view.fragment.AddVehicleFragment"
+        android:label="AddVehicleFragment"
+        tools:layout="@layout/fragment_vehicle_details"/>
 
 </navigation>

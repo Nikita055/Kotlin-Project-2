@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/drawable-xxxhdpi/rounded_bg.xml" value="0.2203125" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/drawable/drawer_item.xml" value="0.27708333333333335" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/drawable/radio.xml" value="0.16770833333333332" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/drawable/rounded_bg.xml" value="0.22" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/activity_add_vehicle_address.xml" value="0.20416666666666666" />
@@ -12,13 +13,17 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/activity_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/activity_splash.xml" value="0.2151268115942029" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/add_vehicle_address_toolobar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/cancelation_bottomsheet.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/drawer_header.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/drawer_item.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_address.xml" value="0.1671875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_contact_us.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_history_detail.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_history_listening.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_history_listing.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_privacy_policy.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_profile.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_schedule.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_schedule_appointment.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_settings.xml" value="0.18802083333333333" />
@@ -28,10 +33,13 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/fragment_view_image_history.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/home_toolbar.xml" value="0.23550724637681159" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/mage_single_list_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/profile_vehicle_list_item.xml" value="0.2318840579710145" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/recent_service_item.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/service_item.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/text_list_item.xml" value="0.20625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/upcoming_appointment_item.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/layout/upload_picture_btm_sheet.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/KotlinwashXproject/app/src/main/res/menu/menu_drawer.xml" value="0.2609375" />
       </map>
     </option>
   </component>
