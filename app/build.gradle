@@ -66,4 +66,10 @@ dependencies {
 
     //CircleImageView
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //simplifies requesting runtime permissions
+    implementation 'com.karumi:dexter:6.2.2'
+
+    //Dexter simplifies requesting permissions at runtime.
+    implementation 'com.karumi:dexter:6.2.2'
 }

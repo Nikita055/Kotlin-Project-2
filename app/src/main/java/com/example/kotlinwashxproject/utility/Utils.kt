@@ -1,11 +1,13 @@
 package com.example.kotlinwashxproject.utility
 
 import android.app.Activity
+import android.content.DialogInterface
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.example.kotlinwashxproject.R
 import com.example.kotlinwashxproject.model.ServicesList
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 object Utils {
     fun showColoredStatusBar(activity: Activity) {
@@ -37,6 +39,13 @@ object Utils {
          }
     }
 
+    fun showAlertDialog(activity: Activity?, title: String?, msg: String?, buttonTitle: String?) {
+        val builder = MaterialAlertDialogBuilder(activity!!, R.style.RoundShapeTheme)
+        builder.setTitle(title)
+            .setMessage(msg)
+            .setPositiveButton(buttonTitle) { dialog: DialogInterface, which: Int -> dialog.dismiss() }
+            .show()
+    }
 
    /* fun navigateUp(){
         findNavController().navigateUp()
